@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import "leetcode/problems"
 
 // func canMakeSubsequence(str1 string, str2 string) bool {
 // 	i, n := 0, len(str2)
@@ -19,12 +19,11 @@ import "fmt"
 // }
 
 func main() {
-    m := "vansh"
-    n:= len(m)
-    for i:=0; i<n; i++{
-        for j:=i+1; j<=n; j++ {
-            fmt.Println(m[i:j])
-        }
-    }
-
+    matrix :=[][]byte {
+        {'1','0','1','0','0'},
+        {'1','0','1','1','1'},
+        {'1','1','1','1','1'},
+        {'1','0','0','1','0'},
+    } 
+    problems.MaximalSquare(matrix)
 }
